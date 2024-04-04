@@ -8,4 +8,5 @@ export default class Router extends EmberRouter {
 
 Router.map(function () {
   this.route('subscriptions');
+  this.route('subscription', { path: '/subscription/:subscription_id' });
 });

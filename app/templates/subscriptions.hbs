@@ -2,11 +2,6 @@
 
 </Subscriptions::NewSubscription>
 
-{{!-- <form {{action 'createSubscription' on='submit'}}>
-  {{input value=subscriptionEmail placeholder='Enter your email'}}
-  <button type='submit'>Subscribe</button>
+<Subscriptions::SubscriptionsList @model={{this.model}}>
 
-  //a nice form with all the existing subscriptions
-        {{#each @model as |subscription|}}
-        <li>{{subscription.email}}</li>
-        {{/each}} --}}
+</Subscriptions::SubscriptionsList>

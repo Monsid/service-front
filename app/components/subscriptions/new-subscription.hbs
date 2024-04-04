@@ -1,9 +1,8 @@
-
 <div local-class="content">
     <div local-class="title">Create a new Subscription</div>
     <div local-class="input">
         <div local-class="input-label">Subscription Name</div>
-        <input placeholder="Subscription Name" type="text">
-        <button>Create</button>
+        <Input @value={{this.subscriptionName}} placeholder="Subscription Name" type="text" />
+        <button type="button" {{on "click" this.createSubscription}}>Create</button>
     </div>
 </div>

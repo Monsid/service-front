@@ -6,8 +6,8 @@ const Sass = require('sass'); // Ensure you have node-sass or dart-sass installe
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     sassOptions: {
-      implementation: Sass
-    }
+      implementation: Sass,
+    },
   });
 
   return app.toTree();
