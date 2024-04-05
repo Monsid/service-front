@@ -1,2 +1,8 @@
-Model is {{this.model.id}}
-Subscription is {{this.model.name}}
+Model is {{@model.subscription.id}}
+Subscription is {{@model.subscription.name}}
+
+<Users::NewUser @subscription={{this.model.subscription}}>
+</Users::NewUser>
+
+<Users::UserList @users={{this.model.users}}/>
+

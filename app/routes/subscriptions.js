@@ -7,4 +7,6 @@ export default class Subscriptions extends Route {
   model() {
     return this.store.findAll('subscriptions');
   }
+  
+
 }

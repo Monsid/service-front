@@ -1,9 +1,7 @@
 <div local-class="content">
-    {{log @model}}
     {{#each @model as |subscription|}}
         <div local-class="link-to"> 
-            <LinkTo @route="subscription" @model={{subscription}}>{{subscription.name}}</LinkTo>
+            <LinkTo @route="subscription" @model={{subscription.id}}>{{subscription.name}}</LinkTo>
         </div>
     {{/each}}
-    
 </div>
